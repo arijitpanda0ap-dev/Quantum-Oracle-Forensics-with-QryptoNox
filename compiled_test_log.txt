@@ -1,0 +1,36 @@
+# Quantum Oracle Forensics with QryptoNox
+## Compiled Test Log
+
+*Project:* Quantum Oracle Forensics with QryptoNox  
+*Environment:* Windows, VS Code, Python 3.14, Qiskit 2.5.2
+
+### Test 1: Python and Qiskit Setup
+- Python executable ran successfully using its full path.
+- Qiskit version was checked and reported as 2.5.2.
+- Result: PASSED.
+
+### Test 2: Solver Syntax and Structure
+- solver.py passed the syntax check.
+- The solve() function was found.
+- Required parameters were confirmed: n, m, budget, families, run.
+- Qiskit import was detected.
+- A two-item tuple return statement was detected.
+- Result: PASSED.
+
+### Test 3: Basic Solver Execution
+A test script called solve(8, 1, 60, ["constant", "linear"], fake_run).
+
+The mock callback returned fabricated measurement counts.
+
+*Observed output:*
+- Circuit received: True
+- Circuit qubits: 9
+- Shots requested: 2 on repeated calls, followed by 5
+- Solver returned: ('constant', 0)
+- Result is a 2-item tuple: True
+
+*Result:* PASSED for basic execution with a mock callback.
+
+### Limitations
+The mock callback did not simulate a real quantum oracle. The following remain unverified:
+- Correct
